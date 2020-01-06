@@ -34,13 +34,9 @@ while index < nds.length do
 result[nds[:name]] = gross_for_director(value)
 
 index += 1
-  
+
 end
 
 return result
 
 end
-
-
-
-
