@@ -22,6 +22,18 @@ end
 
 def directors_totals(nds)
 
-puts gross_for_director(nds[:movies])
+  index = 0
+  result = {}
+
+while index < nds.size do
+  director = nds[index]
+
+result[nds[:name]] = gross_for_director(director)
+
+index += 1
+
+end
+
+result
 
 end
