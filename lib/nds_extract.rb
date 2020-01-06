@@ -37,8 +37,8 @@ while index < nds.length do
 
   index2 = 0
   while index2 < nds[index][:movies].length do
-
-    result[name] += nds[index][:movies][index2][:worldwide_gross]
+gross = nds[index][:movies][index2][:worldwide_gross]
+    result[name] = directors_totals(gross)
 
     index2 += 1
 
