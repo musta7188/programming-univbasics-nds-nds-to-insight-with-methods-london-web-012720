@@ -9,8 +9,7 @@ index = 0
 
 total = 0
 
-place = director_data[:movies].length
-while index < place do
+while index < director_data[:movies].length do
   total += director_data[:movies][index][:worldwide_gross]
 
   index += 1
