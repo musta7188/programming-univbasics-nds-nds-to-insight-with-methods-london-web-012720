@@ -22,6 +22,6 @@ end
 
 def directors_totals(nds)
 
-puts gross_for_director(nds)
+puts gross_for_director(nds[:movies])
 
 end
