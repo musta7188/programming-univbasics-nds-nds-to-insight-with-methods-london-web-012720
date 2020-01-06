@@ -9,43 +9,31 @@ index = 0
 
 total = 0
 
-place = director_data[:movies].length
-while index < place do
+while index < director_data[:movies].length do
   total += director_data[:movies][index][:worldwide_gross]
 
   index += 1
 end
 
-return total
+ total
 
 end
 
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
+
 def directors_totals(nds)
 
   index = 0
   result = {}
 
+while index < nds.size do
+  director = nds[index]
 
-while index < nds.length do
-  name = nds[index][:name]
+result[director[:name]] = gross_for_director(director)
 
-  result[name] = 0
+index += 1
 
-  index2 = 0
-  while index2 < nds[index][:movies].length do
-
-    result[name] += nds[index][:movies][index2][:worldwide_gross]
-
-    index2 += 1
-
-  end
-  index += 1
 end
 
- return result
+result
 
 end
