@@ -15,7 +15,7 @@ while index < director_data[:movies].length do
   index += 1
 end
 
-return total
+ total
 
 end
 
